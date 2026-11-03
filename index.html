@@ -62,6 +62,23 @@ section#home.active{display:grid;grid-template-columns:1fr auto;column-gap:64px;
 #home .hi{font-size:1.2rem}
 #home p{font-size:1.05rem;max-width:520px}
 }
+@media (min-width:900px){
+header{justify-content:center;gap:14px;padding-top:16px;padding-bottom:16px}
+header a{font-size:.95rem;padding:11px 26px}
+section{max-width:1180px;padding:48px 64px}
+section#home.active{max-width:1180px}
+#home .frame{width:min(52dvh,420px)}
+#home h1{font-size:clamp(2.6rem,4.2vw,4rem)}
+#home p{font-size:1.15rem;max-width:560px}
+section#about.active,section#achievements.active,section#family.active{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-content:center;min-height:calc(100dvh - 72px)}
+section#family.active{grid-template-columns:repeat(2,1fr)}
+section.active>h2,section.active>p{grid-column:1/-1}
+section.active>h2{font-size:2.4rem;margin-bottom:0}
+section.active>p{font-size:1.15rem;max-width:760px;margin-bottom:8px}
+section.active>.card{margin:0;padding:28px}
+.card h3{font-size:1.2rem}.card p{font-size:1rem}
+.fam img{width:150px;height:150px}
+}
 </style>
 </head>
 <body>
